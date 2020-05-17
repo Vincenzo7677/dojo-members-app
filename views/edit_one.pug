@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    form(method='POST', action='/edit/members/' + members._id)
+     .form-group
+        label Name:
+        input.form-control(name='name', type='text', value= members.name)
+     .form-group
+        label Age:
+        input.form-control(name='age',type='text', value= members.age)
+        br
+    
+     input.btn.btn-primary(type='submit', value='submit') 

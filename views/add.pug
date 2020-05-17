@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    form(method='POST', action='/add/members')
+     .form-group
+        label Name:
+        input.form-control(name='name', type='text')
+     .form-group
+        label Age:
+        input.form-control(name='age',type='text')
+        br
+    
+     input.btn.btn-primary(type='submit', value='submit') 
+     h1 #{message}

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .row
+    each member, i in members
+      .col-lg-6
+        .card
+          .card-body
+            h5= member.name
+            p= member.age

@@ -1,0 +1,13 @@
+extends layout
+
+block content
+
+    .card(style='width: 18rem;')
+        //- img.card-img-top(src='...' alt='...')
+        .card-body
+            h5.card-title #{members.name}
+            p.card-text #{members.age}
+            a.btn.btn-primary(href='/edit/members/' + members._id) Edit
+            a.btn.btn-danger(href='/delete/members/' + members._id onclick="refresh()") Delete
+
+            
